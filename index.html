@@ -5,18 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SVG Shapes</title>
+    <style>
+      .Box{
+          width: 280px;
+          height: 240px;
+          border: 2px solid purple;
+      }
+    </style>
 </head>
 <body>
+
+    <svg viewBox="300 0 120 150" class="Box">
+       <circle r="50" cx="75" cy="75" fill="lightblue"></circle>
+       <circle r="50" cx="200" cy="75" fill="lightgreen"></circle>
+       <circle r="50" cx="350" cy="75" fill="red"></circle>
+    </svg>
     
-    <svg width="270" height="280">
-       <circle r="130" cx="260" cy="140" fill="none" stroke="black" stroke-width="8px"></circle> 
+    <!-- <svg width="270" height="280">
+       <circle r="130" cx="290" cy="140" fill="none" stroke="black" stroke-width="2px"></circle> 
+       <circle r="130" cx="270" cy="140" fill="none" stroke="black" stroke-width="2px"></circle> 
+       <rect width="250" height="125" x="12" y="24" rx="12" ry="24" fill="green"></rect>
     </svg>
-    <svg width="270" height="280">
-       <circle r="130"  cy="140" fill="none" stroke="black" stroke-width="8px"></circle> 
+    <svg>
+        <line x1="124" y1="124" x2="200" y2="150" stroke="black" stroke-width="4px"></line>
+        <line x1="124" y1="150" x2="200" y2="124" stroke="black" stroke-width="4px"></line>
     </svg>
-    <svg width="260" height="260">
-       <circle r="130"  cy="130" fill="#240124"></circle> 
-    </svg>
+    <svg width="500" height="500">
+        <polygon fill="purple" points="50,50 200,50 125,145 200,240  50,240  125,145 "/>
+    </svg> -->
+
+
 
 </body>
 </html>
