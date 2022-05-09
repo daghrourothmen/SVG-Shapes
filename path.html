@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Path SVG</title>
+    <style>
+        :root {
+        --gradient: linear-gradient(
+            45deg,
+            #845ec2,
+            #d65db1,
+            #ff6f91,
+            #ff9671,
+            #ffc75f,
+            #f9f871
+        );
+       }
+       .animation-circle{
+        background-image: var(--gradient);
+        background-size: 400%;
+        animation: bg-animation 12s infinite alternate;
+        margin-left: 10px;
+       }
+       @keyframes bg-animation{
+
+            0%{
+                background-position:left;
+            }
+            100%{
+                background-position: right;
+            }
+       }
+       .media-player{
+           display: flex;
+           flex-direction: row;
+           justify-content: center;
+           
+       }
+    </style>
+</head>
+<body>
+    <div class="media-player">
+
+        <svg height="80px" style="border-radius: 100%;" width="80px" class="animation-circle">  
+            <polygon fill="white" points="5,40 30,10 30,70" stroke="none"></polygon>
+            <polygon fill="white" points="30,40 55,10 55,70" stroke="none"></polygon>
+        </svg>
+        <svg height="80px" style="border-radius: 100%;" width="80px" class="animation-circle">
+            <rect width="10px" height="60px" x="25" y="10" fill="white" stroke="none"></rect>
+            <rect width="10px" height="60px" x="45" y="10" fill="white" stroke="none"></rect>
+        </svg>
+        <svg height="80px" style="border-radius: 100%;" width="80px" class="animation-circle">    
+            <rect width="45px" height="45px" x="18" y="18" fill="white" stroke="none"></rect>
+        </svg>
+        <svg height="80px" style="border-radius: 100%;" width="80px" class="animation-circle">            
+            <polygon fill="white" points="35,10 35,70 60,40" stroke="none"></polygon>            
+        </svg>      
+        <svg height="80px" style="border-radius: 100%;" width="80px" class="animation-circle">
+            <polygon fill="white" points="25,10 25,70 50,40" stroke="none"></polygon>      
+            <polygon fill="white" points="50,10 50,70 75,40" stroke="none"></polygon> 
+        </svg>
+        
+    </div>
+</body>
+</html>
