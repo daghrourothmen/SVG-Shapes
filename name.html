@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Names</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .content{
+            position: relative;
+        }
+        .content h1{
+
+            position: absolute;
+            transform: translate(35%,80%);
+            font-size: 8em;
+        }
+        .content h1:nth-child(1){
+            color: transparent;
+            -webkit-text-stroke: 1px #03a9f4;
+        }
+        .content h1:nth-child(2){
+            color: #03a9f4;
+            animation: animate-wave 4s ease-in-out infinite;
+        }
+
+        @keyframes animate-wave{
+
+            0%,100%{
+                clip-path: polygon(1% 49%, 13% 49%, 24% 51%, 31% 54%, 39% 57%,
+                                   44% 60%, 53% 63%, 63% 64%, 75% 66%, 87% 66%,
+                                   95% 66%, 100% 66%, 100% 100%, 0% 100%);
+            }
+
+            50%{
+                clip-path: polygon(0 68%, 0 74%, 20% 74%, 32% 72%, 43% 64%,
+                                   56% 64%, 47% 63%, 59% 55%, 78% 48%, 100% 47%,
+                                    100% 56%, 100% 66%, 100% 100%, 0% 100%, 1% 68%);
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Othmen Daghrour</h1>
+        <h1>Othmen Daghrour</h1>
+    </div>
+</body>
+</html>
